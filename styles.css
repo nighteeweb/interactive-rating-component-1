@@ -1,0 +1,140 @@
+:root {
+    --orange-500: hsl(25, 97%, 53%);
+    --white: hsl(0, 100%, 100%);
+    --grey-500: hsl(217, 12%, 63%);
+    --grey-900: hsl(213, 19%, 18%);
+    --grey-950: hsl(216, 12%, 8%);
+    --grey-850: hsl(215, 17%, 25%);
+
+    --base-font-size: 15px;
+}
+
+@font-face {
+    font-family: "Overpass";
+    src: url("fonts/Overpass-Regular.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Overpass";
+    src: url("fonts/Overpass-Bold.woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-color: var(--grey-950);
+    height: 100%;
+    width: 100%;
+    font-family: "Overpass";
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+p {
+    color: var(--grey-500);
+    font-size: var(--base-font-size);
+    line-height: 25px;
+}
+
+.form, .thanks{
+    margin-top: 250px;
+    background-color: var(--grey-900);
+    width: 360px;
+    height: 360px;
+    border-radius: 30px;
+    border: none;
+    padding: 40px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--grey-850);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    visibility: visible;
+}
+
+.form-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--grey-850);
+    color: var(--grey-500);
+    font-family: "Overpass";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+button:hover {
+    background-color: var(--orange-500);
+    color: var(--grey-850);
+    transition-duration: 0.2s; 
+}
+
+.form-submit {
+    width: 100%;
+    margin-top: 30px;
+    letter-spacing: 3px;
+}
+.form-submit:hover {
+    background-color: var(--white);
+}
+
+.thanks {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-main {
+    width: 200px;
+    background-color: var(--grey-850);
+    margin-top: 30px;
+    height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.thanks-rating, .selected-value {
+    color: var(--orange-500);
+    display: inline;
+    line-height: 44px;
+}
+
+.thanks-main {
+    margin-bottom: 0;
+}
+
+.description-rating {
+    text-align: center;
+}

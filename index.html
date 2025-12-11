@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="form">
+      <!-- Rating state start -->
+
+      <div class="icon"><img src="images/icon-star.svg"/></div>
+
+      <h1 class="form-main">How did we do?</h1>
+
+      <p class="form-description">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+
+      <div class="form-buttons">
+        <button id="one">1</button><button id="two">2</button><button id="three">3</button><button id="four">4</button><button id="five">5</button>
+      </div>
+
+      <button class="form-submit">Submit</button>
+
+      <!-- Rating state end -->
+    </div>
+    <div class="thanks">
+      <!-- Thank you state start -->
+
+      <img src="images/illustration-thank-you.svg" alt="thank you">
+
+      <div class="rating-main">
+        <p class="thanks-rating">You selected </p><p class="selected-value">4</p><p class="thanks-rating"> out of 5</p>
+      </div>
+
+      <h1 class="thanks-main">Thank you!</h1>
+
+      <p class="description-rating">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+
+      <!-- Thank you state end -->
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/nighteeweb">night</a>.
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
