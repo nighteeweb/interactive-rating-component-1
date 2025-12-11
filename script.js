@@ -10,8 +10,6 @@
     const sel_value = document.querySelector(".selected-value");
     const white = 'white';
     const grey = '#353e4b';
-    const light_grey = '#959eac';
-    const orange = '#fb7413';
     let rate = 0;
     
     one.onclick = function(){
@@ -85,10 +83,11 @@
     }
 
     submit.onclick = function(){
-      if(rate != 0) {
+      if(rate !== 0) {
         form.style.visibility = 'hidden';
         thanks.style.visibility = 'visible';
       }
       sel_value.textContent = rate;
     }
+
   
